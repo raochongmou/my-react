@@ -1,4 +1,6 @@
 import React from "react"
+import {render} from "react-dom"
+import './child.css';
 // import PropsTypes from "prop-types"
 
 // function Person(props) {
@@ -45,19 +47,19 @@ import React from "react"
 // export { AlertValue }
 // 父传子
 // 父组件
-class Parent extends React.Component {
+class ParentCom extends React.Component {
     constructor(props) {
         super(props)
-        this.showChildren = this.showChildren(this)
+        this.showChildren = this.showChildren.bind(this)
         this.state = {
-            isActive:false
+            isActive:true
         }
     }
     render() {
         return (
             <div>
                 <button onClick={this.showChildren}>点击显示子组件</button>
-                <Children isActive={this.state.isActive} />
+                <ChildrenCom isActive={this.state.isActive} />
             </div>
         )
     }
@@ -66,26 +68,26 @@ class Parent extends React.Component {
             isActive: !this.state.isActive
         })
     }
-    // componentDidCatch(error, errorInfo) {
-    //     console.log('==============',error,errorInfo);
-    // }
 }
 // 子组件
-class Children extends React.Component {
+class ChildrenCom extends React.Component {
     constructor(props) {
         super(props)
     }
     render() {
-        let strClass = null
+        let strClass = null;
         if(this.props.isActive) {
-            strClass = " child"
+            strClass = " active"
         }else {
             strClass = ""
         }
         return (
-            <div className={"nochild" + strClass}></div>
+
+            <div className={"content"+strClass}>
+                <h1>我是子组件</h1>
+            </div>
         )
     }
 }
 
-export { Parent }
+export { ParentCom }

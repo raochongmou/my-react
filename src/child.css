@@ -1,9 +1,7 @@
-.noChild.child {
-    width: 100px;
-    height: 100px;
-    background-color: #abcdef;
+.content.active {
+    display: block;
 }
-.noChild {
+.content {
     width: 100px;
     height: 100px;
     background-color: #abcdef;
