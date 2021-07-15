@@ -1,6 +1,6 @@
-import React from "react"
-import {render} from "react-dom"
-import './child.css';
+// import React from "react"
+// import {render} from "react-dom"
+// import './child.css';
 // import PropsTypes from "prop-types"
 
 // function Person(props) {
@@ -90,4 +90,4 @@ class ChildrenCom extends React.Component {
     }
 }
 
-export { ParentCom }
+// export { ParentCom }
