@@ -7,11 +7,16 @@ import './index.css';
 // import { AlertValue } from './Test.js'
 // import { TextSelect } from './TextSelect.js'
 // import { Comments } from './Comments.js'
-import { Parent } from './Communi.js'
-import { AppCom } from './Context.js'
+// import { Parent } from './Communi.js'
+// import { AppCom } from './Context.js'
+import {WithCom} from './WithCom.js'
+
+
+
 // ReactDOM.render(<Person {...p1} ></Person>, document.getElementById('root'))
 // ReactDOM.render(<AlertValue/>, document.getElementById('root'))
 // ReactDOM.render(<ParentCom/>, document.getElementById('root'))
 // ReactDOM.render(<TextSelect/>, document.getElementById('root'))
 // ReactDOM.render(<Comments/>, document.getElementById('root'))
-ReactDOM.render(<AppCom/>, document.getElementById('root'))
+// ReactDOM.render(<AppCom/>, document.getElementById('root'))
+ReactDOM.render(<WithCom/>, document.getElementById('root'))
