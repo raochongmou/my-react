@@ -9,7 +9,10 @@ import './index.css';
 // import { Comments } from './Comments.js'
 // import { Parent } from './Communi.js'
 // import { AppCom } from './Context.js'
-import {WithCom} from './WithCom.js'
+// import {WithCom} from './WithCom.js'
+// import { SetState } from './SetState.js'
+// import { RouterCom } from './RouterCom.js'
+import { ProgramNav } from './ProgramNav.js'
 
 
 
@@ -19,4 +22,4 @@ import {WithCom} from './WithCom.js'
 // ReactDOM.render(<TextSelect/>, document.getElementById('root'))
 // ReactDOM.render(<Comments/>, document.getElementById('root'))
 // ReactDOM.render(<AppCom/>, document.getElementById('root'))
-ReactDOM.render(<WithCom/>, document.getElementById('root'))
+ReactDOM.render(<ProgramNav />, document.getElementById('root'))
